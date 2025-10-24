@@ -2,8 +2,6 @@
 
 #run it in the home dir of the user after first boot
 
-#(for image viewing)
-sudo pacman -S feh 
 #(for kickstarter nvim)
 sudo pacman -S git
 sudo pacman -S neovim
