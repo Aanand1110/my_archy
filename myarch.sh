@@ -27,4 +27,8 @@ webi webi
 #webi golang@latest
 #sudo pacman -S gcc
 
+#for waybar
+sudo pacman -S waybar
+mkdir $HOME/.config/waybar
+
 echo "everything successfull"
