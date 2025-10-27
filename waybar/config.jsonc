@@ -124,6 +124,6 @@
   },
   "hyprland/language": {
     "format": "",
-    "on-click": "poweroff"
+    "on-click": "kitty ~/.config/waybar/poweroff.sh"
   }
 }
