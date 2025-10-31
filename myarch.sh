@@ -57,6 +57,7 @@ cd $HOME/.config/waybar
 curl -o config.jsonc  https://raw.githubusercontent.com/aanand1110/my_archy/main/waybar/config.jsonc
 
 curl -o poweroff.sh https://raw.githubusercontent.com/aanand1110/my_archy/main/waybar/poweroff.sh
+chmod +x poweroff.sh
 
 curl -o style.css  https://raw.githubusercontent.com/aanand1110/my_archy/main/waybar/style.css
 
