@@ -120,7 +120,7 @@
     "tooltip-format-ethernet": " {ifname} {ipaddr}/{cidr}",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,
-    "on-click": "nm-connection-editor"
+    "on-click": "kitty ~/.config/waybar/wifi.sh"
   },
   "hyprland/language": {
     "format": "",

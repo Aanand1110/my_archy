@@ -59,6 +59,12 @@ curl -o config.jsonc  https://raw.githubusercontent.com/aanand1110/my_archy/main
 curl -o poweroff.sh https://raw.githubusercontent.com/aanand1110/my_archy/main/waybar/poweroff.sh
 chmod +x poweroff.sh
 
+curl -o poweroff.sh https://raw.githubusercontent.com/aanand1110/my_archy/main/waybar/wifi.sh
+if [ $? -eq 0 ]; then
+    chmod +x wifi.x
+else
+    echo "failed to install the wifi.sh file"
+fi
 curl -o style.css  https://raw.githubusercontent.com/aanand1110/my_archy/main/waybar/style.css
 
 cd $HOME
