@@ -278,15 +278,33 @@ require("lazy").setup({
 		"lewis6991/gitsigns.nvim",
 		opts = {
 			signs = {
-				add = { text = "+" },
-				change = { text = "~" },
+				add = { text = "┃" },
+				change = { text = "┃" },
 				delete = { text = "_" },
 				topdelete = { text = "‾" },
 				changedelete = { text = "~" },
+				untracked = { text = "┆" },
+			},
+			signs_staged = {
+				add = { text = "┃" },
+				change = { text = "┃" },
+				delete = { text = "_" },
+				topdelete = { text = "‾" },
+				changedelete = { text = "~" },
+				untracked = { text = "┆" },
 			},
 		},
+		vim.keymap.set("n", "<leader>gp", ":Gitsigns preview_hunk<CR>", {}),
+		vim.keymap.set("n", "<leader>tb", ":Gitsigns toggle_current_line_blame<CR>", {}),
+		vim.keymap.set("n", "<leader>hs", ":Gitsigns stage_hunk<CR>", {}),
+		vim.keymap.set("n", "<leader>hr", ":Gitsigns reset_hunk<CR>", {}),
 	},
 
+	-- for fugetive
+	{
+		"tpope/vim-fugitive",
+	},
+	
 	-- My code(adding a automair plugin)
 	{
 		"windwp/nvim-autopairs",
