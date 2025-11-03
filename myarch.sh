@@ -27,6 +27,7 @@ sudo pacman -S firefox
 
 #(for daily development workflows)
 sudo pacman -S git
+sudo pacman -S less
 
 # for unpacking lsps
 sudo pacman -S unzip
