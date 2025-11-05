@@ -12,21 +12,22 @@
 * Choose NetworkManager while installing Arch(Optional).
 
 # Steps
-**Better to run the following in the home dir. of a user after the first boot.**
-1) Run the myarch.sh script from this repository.
-```
-~ ./myarch.sh
-```
-*copy past this file from the repo or clone this repo and than run it.*
-*Do not forget to:*
+**Better to run the following in the home dir. of a user after the first boot.**<br>
+*copy past this file from the repo or clone this repo and than run it.*<br>
+1) *Do not forget to:*
 ```
 ~ chmod +x myarch.sh
 ```
-2) Reboot the system
+2) Run the myarch.sh script from this repository.
+```
+~ sudo ./myarch.sh
+```
+
+3) Reboot the system
 ```
 ~ reboot
 ```
-3) Check if everything is configured properly.
+4) Check if everything is configured properly.
 ### To configure waybar time.
 **You need to change the waybar config**
 ```
