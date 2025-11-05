@@ -13,8 +13,8 @@
 
 # Steps
 **Better to run the following in the home dir. of a user after the first boot.**<br>
-*copy past this file from the repo or clone this repo and than run it.*<br>
-1) *Do not forget to:*
+1) *copy past this file from the repo or clone this repo and than run it.*<br>
+*Do not forget to:*
 ```
 ~ chmod +x myarch.sh
 ```
