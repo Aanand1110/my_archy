@@ -38,6 +38,11 @@ fi
 
 #(for daily development workflows)
 sudo pacman -S git
+if [ $? -eq 0 ]; then
+    result+=$(echo -e "\033[0;32m✓ Successfully installed git.\033[0m")
+else 
+    result+=$(echo -e "\033[0;32m✕ Couldnot install git for some resaon (run 'sudo pacman -S git').\033[0m")
+fi
 sudo pacman -S less
 
 # for unpacking lsps
@@ -66,7 +71,6 @@ if [ $? -eq 0 ]; then
 else 
     result+=$(echo -e "\033[0;32m✕ Couldnot install webi for some resaon.\033[0m")
 fi
-
 
 #webi golang@latest
 #sudo pacman -S gcc
