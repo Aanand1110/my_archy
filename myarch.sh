@@ -30,6 +30,11 @@ cd $HOME
 
 #installing firefox
 sudo pacman -S firefox
+if [ $? -eq 0 ]; then
+    result+=$(echo -e "\033[0;32m✓ Successfully installed firefox.\033[0m")
+else 
+    result+=$(echo -e "\033[0;32m✕ Couldnot install firefox for some resaon (run 'sudo pacman -S firefox').\033[0m")
+fi
 
 #(for daily development workflows)
 sudo pacman -S git
@@ -37,6 +42,11 @@ sudo pacman -S less
 
 # for unpacking lsps
 sudo pacman -S unzip
+if [ $? -eq 0 ]; then
+    result+=$(echo -e "\033[0;32m✓ Successfully installed unzip(for unpacking LSPs for nvim).\033[0m")
+else 
+    result+=$(echo -e "\033[0;32m✕ Couldnot install unzip for some resaon (run 'sudo pacman -S unzip').\033[0m")
+fi
 
 sudo pacman -S neovim
 mkdir $HOME/.config/nvim
@@ -49,8 +59,14 @@ cd $HOME
 #for installing webi
 curl -sS https://webi.sh/webi | sh; \
 source ~/.config/envman/PATH.env
-#to update webi
-webi webi
+if [ $? -eq 0 ]; then
+    result+=$(echo -e "\033[0;32m✓ Successfully installed webi(for installing development tools[webinstall.dev]).\033[0m")
+    #to update webi
+    webi webi
+else 
+    result+=$(echo -e "\033[0;32m✕ Couldnot install webi for some resaon.\033[0m")
+fi
+
 
 #webi golang@latest
 #sudo pacman -S gcc
