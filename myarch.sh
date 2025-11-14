@@ -2,11 +2,17 @@
 
 #run it in the home dir of the user after first boot
 
+result=""
+
 #for hyperland
 cd $HOME/.config/hypr
 
 curl https://raw.githubusercontent.com/aanand1110/my_archy/main/hypr/hyprland.conf > hyprland.conf
-
+if [ $? -eq 0 ]; then
+    result+=$(echo -e "\033[0;32m✓ Successfull in configuring hyperland.\033[0m")
+else 
+    result+=$(echo -e "\033[0;32m✕ Couldnot configure hyperland for some reason.\033[0m")
+fi
 cd $HOME
 
 #for basic kitty config
@@ -70,5 +76,4 @@ curl -o style.css  https://raw.githubusercontent.com/aanand1110/my_archy/main/wa
 
 cd $HOME
 
-echo "everything successfull"
-
+echo $result
