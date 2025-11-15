@@ -71,7 +71,7 @@ fi
 # nvim
 nvim=0
 sudo pacman -S neovim
-if[ $? -ne 0 ]; then
+if [ $? -ne 0 ]; then
     nvim=1
 fi
 
