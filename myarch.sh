@@ -18,7 +18,7 @@ cd $HOME
 #for basic kitty config
 
 kitty=0
-mkdir $HOME/.config/kitty
+#mkdir $HOME/.config/kitty
 cd $HOME/.config/kitty
 
 curl -o current-theme.conf https://raw.githubusercontent.com/aanand1110/my_archy/main/kitty/current-theme.conf
@@ -115,37 +115,39 @@ fi
 waybar=0
 sudo pacman -S waybar
 if [ $? -ne 0 ]; then
-   wayabr=1 
+   waybar=1 
 fi
 sudo pacman -S otf-aurulent-nerd
+
 mkdir $HOME/.config/waybar
 if [ $? -ne 0 ]; then
-   wayabr=1 
+   waybar=1 
 fi
+
 cd $HOME/.config/waybar
 
 curl -o config.jsonc  https://raw.githubusercontent.com/aanand1110/my_archy/main/waybar/config.jsonc
 if [ $? -ne 0 ]; then
-   wayabr=1 
+   waybar=1 
 fi
 
 curl -o poweroff.sh https://raw.githubusercontent.com/aanand1110/my_archy/main/waybar/poweroff.sh
 if [ $? -ne 0 ]; then
-   wayabr=1 
+   waybar=1 
 else
     chmod +x poweroff.sh
 fi
 
-curl -o poweroff.sh https://raw.githubusercontent.com/aanand1110/my_archy/main/waybar/wifi.sh
+curl -o wifi.sh https://raw.githubusercontent.com/aanand1110/my_archy/main/waybar/wifi.sh
 if [ $? -ne 0 ]; then
-   wayabr=1 
+   waybar=1 
 else
-    chmod +x poweroff.sh
+    chmod +x wifi.sh
 fi
 
 curl -o style.css  https://raw.githubusercontent.com/aanand1110/my_archy/main/waybar/style.css
 if [ $? -ne 0 ]; then
-   wayabr=1 
+   waybar=1 
 fi
 
 if [ "$nvim" -eq 0 ]; then
