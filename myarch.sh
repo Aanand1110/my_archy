@@ -16,7 +16,6 @@ fi
 cd $HOME
 
 #for basic kitty config
-
 kitty=0
 #mkdir $HOME/.config/kitty
 cd $HOME/.config/kitty
@@ -157,4 +156,10 @@ else
 fi
 cd $HOME
 
+sudo pacman -S swaybg
+if [ $? -eq 0 ]; then
+    result+=$(echo -e "\033[0;32m✓ Successfully installed and swaybg.\033[0m")
+else
+    result+=$(echo -e "\033[0;32m✕ Couldnot install swaybg(run 'sudo pacman -S swaybg).\033[0m")
+fi
 echo $result
