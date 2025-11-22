@@ -13,7 +13,7 @@
     "cpu",
     "memory",
     "disk",
-    "temperature"
+    "battery"
   ],
   "modules-center": [
     "hyprland/workspaces"
@@ -55,13 +55,17 @@
     "tooltip": true,
     "tooltip-format": "Espacio libre: {free} / {total} ({percentage_free}%)"
   },
-  "temperature": {
-    "format": "{temperatureC}°C {icon}",
-    "tooltip": true,
-    "tooltip-format": "Temperatura actual: {temperatureC}°C\nCrítico si > 80°C",
-    "format-icons": [
-      ""
-    ]
+  "battery": {
+    "format": "{capacity}% {icon} ",
+    "format-icons": {
+        "full": "",      // Full battery icon
+        "charging": "",  // Charging icon
+        "discharging": "", // Discharging icon
+        "empty": ""      // Empty battery icon
+    },
+    "interval": 30,
+    "warn": 20,
+    "critical": 10
   },
   /* === Modules Center === */
   "hyprland/workspaces": {

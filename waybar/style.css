@@ -20,7 +20,7 @@ window#waybar.hidden {
 #cpu,
 #memory,
 #disk,
-#temperature,
+#battery,
 #idle_inhibitor,
 #pulseaudio,
 #pulseaudio-slider,
@@ -45,7 +45,7 @@ window#waybar.hidden {
 
 /* separation to the rigth */
 #clock,
-#temperature,
+#battery,
 #language {
   margin-right: 5px;
   border-top-right-radius: 10px;
@@ -82,7 +82,7 @@ window#waybar.hidden {
   color: #abe9b3;
 }
 
-#temperature {
+#battery{
   background: rgba(0,0,0,0.5);
   color: #abe9b3;
 }
