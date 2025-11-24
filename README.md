@@ -28,15 +28,10 @@
 ~ reboot
 ```
 4) Check if everything is configured properly.
-### To configure waybar time.
-**You need to change the waybar config**
-```
-~ cd $HOME/.config/waybar
-```
-```
-nvim config.jsonc
-```
-*change the timezone argument in the clock object.*
+
+# Some recomended steps after running the script
+### Configure waybar time.
+**In the ~/.config/waybar/config.jsonc file.**
 ```
 "clock":{
     "timezone: "<country>/<city>"
@@ -44,5 +39,18 @@ nvim config.jsonc
 /*
 Example:
 India/Kolkata
+*/
+```
+
+### Change the background.
+**In ~/.config/hypr/hyperland.conf**
+
+*change the timezone argument in the clock object.*
+```
+exec-once = swaybg -i /path/to/the/wallpaper
+
+/*
+Example:
+exec-once = swaybg -i /Downloades/wallpaper.jpg
 */
 ```
