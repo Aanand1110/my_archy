@@ -1,0 +1,18 @@
+status commands
+1) :G = to go to status buffer
+2) go to file and 's' = to stage that perticular file
+3) '=' = inline diff
+4) dv = vertical defference
+5) u = unstage
+6) cc = commit main -> write the commit message -> :wq
+
+branch commands
+1) :G checkout -b new-branch
+2) Gvdiffsplit = to see the changes
+3) Gvdiffsplit <branch> = to see changes compared to the another branch
+
+history commands
+1) :G log = go see the commit history -> shifg + o = to see the changes 
+
+merge conflicts
+1) int the file with merge coflicts: Gvdifsplit! -> wnat to take from left window = d2o and right = d3o
