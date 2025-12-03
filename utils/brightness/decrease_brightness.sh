@@ -1,5 +1,7 @@
 #!/bin/sh
 
+#run this script to decrease brightness by 10%
+
 path="/sys/class/backlight/"
 
 for dir in /sys/class/backlight/*/; do
