@@ -137,13 +137,6 @@ else
     chmod +x poweroff.sh
 fi
 
-curl -o wifi.sh https://raw.githubusercontent.com/aanand1110/my_archy/main/waybar/wifi.sh
-if [ $? -ne 0 ]; then
-   waybar=1 
-else
-    chmod +x wifi.sh
-fi
-
 curl -o style.css  https://raw.githubusercontent.com/aanand1110/my_archy/main/waybar/style.css
 if [ $? -ne 0 ]; then
    waybar=1 
