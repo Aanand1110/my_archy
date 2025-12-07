@@ -89,7 +89,7 @@ if [ $? -ne 0 ]; then
     nvim=1
 fi
 
-if [ "$nvim" -eq 1 ]; then 
+if [ "$nvim" -eq 0 ]; then 
     result+=$(echo -e "\033[0;32m✓ Successfully installed and configured nvim.\033[0m")
 else
     result+=$(echo -e "\033[0;32m✕ Couldnot configure nvim for some reason.\033[0m")
