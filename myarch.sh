@@ -58,6 +58,11 @@ else
     result+=$(echo -e "\033[0;32m✕ Couldnot install git for some resaon (run 'sudo pacman -S git').\033[0m")
 fi
 sudo pacman -S less
+if [ $? -eq 0 ]; then
+    result+=$(echo -e "\033[0;32m✓ Successfully installed less(for git branching).\033[0m")
+else 
+    result+=$(echo -e "\033[0;32m✕ Couldnot install less for some resaon (run 'sudo pacman -S less').\033[0m")
+fi
 
 # for unpacking lsps
 sudo pacman -S unzip
@@ -72,6 +77,7 @@ nvim=0
 sudo pacman -S neovim
 if [ $? -ne 0 ]; then
     nvim=1
+    result+=$(echo -e "\033[0;32m✕ pacman couldnot install neoviem for somereason.(run 'sudo pacman -S neovim').\033[0m")
 fi
 
 mkdir $HOME/.config/nvim
@@ -114,7 +120,8 @@ fi
 waybar=0
 sudo pacman -S waybar
 if [ $? -ne 0 ]; then
-   waybar=1 
+    waybar=1 
+    result+=$(echo -e "\033[0;32m✕ pcaman couldnot install waybar for some resaon.(run 'pacman -S waybar')\033[0m") 
 fi
 sudo pacman -S otf-aurulent-nerd
 
