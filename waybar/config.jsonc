@@ -117,8 +117,8 @@
     }
   },
   "network": {
-    "format": "{ifname}",
-    "format-ethernet": "{ifname} 󰈀",
+    "format": "",
+  "format-ethernet": "󰈀",
     "format-disconnected": " ",
     "tooltip-format": " {ifname} via {gwaddr}",
     "tooltip-format-ethernet": " {ifname} {ipaddr}/{cidr}",
