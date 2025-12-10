@@ -119,7 +119,7 @@
   "network": {
     "format": "",
   "format-ethernet": "󰈀",
-    "format-disconnected": " ",
+    "format-disconnected": "󱚵",
     "tooltip-format": " {ifname} via {gwaddr}",
     "tooltip-format-ethernet": " {ifname} {ipaddr}/{cidr}",
     "tooltip-format-disconnected": "Disconnected",
