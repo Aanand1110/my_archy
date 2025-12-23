@@ -54,3 +54,6 @@ Example:
 exec-once = swaybg -i /Downloades/wallpaper.jpg
 */
 ```
+
+### If something in the script fails.
+*Run the myarch.sh file again. Until everything works fine.*
