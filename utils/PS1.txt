@@ -1,0 +1,3 @@
+// Add this line to your .bashrc file
+
+PS1='\[\e]133;k;start_kitty\a\]\[\e]133;D;$?\a\e]133;A\a\]\[\e]133;k;end_kitty\a\]\[\e]133;D;$?\e\\\e]133;A\e\\\]\[\e[0m\]\[\e[38;5;35m\]╭─(\[\e[38;5;38m\]\t\[\e[38;5;35m\])-(\[\e[38;5;38m\]\H\[\e[38;5;35m\])-(\[\e[38;5;38m\]\w\[\e[38;5;35m\])\n\[\e]133;k;start_secondary_kitty\a\]\[\e]133;A;k=s\a\]\[\e]133;k;end_secondary_kitty\a\]\[\e[38;5;35m\]╰─  \[\e[0m\]\[\e]133;B\e\\\]\[\e]133;k;start_suffix_kitty\a\]\[\e[5 q\]\[\e]2;\w\a\]\[\e]133;k;end_suffix_kitty\a\]'
