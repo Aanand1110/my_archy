@@ -3,4 +3,3 @@ Name=LibreOffice ppt
 Exec=loimpress
 Type=Application
 Categories=Office;
-

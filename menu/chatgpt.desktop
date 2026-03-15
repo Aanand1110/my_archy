@@ -4,4 +4,3 @@ Exec=firefox --app=https://chatgpt.com
 Type=Application
 Terminal=false
 Categories=Network;
-
