@@ -15,6 +15,20 @@ mkdir $HOME/.local/share/applications
 cd $HOME/.local/share/applications
 
 curl -o chatgpt.desktop https://github.com/Aanand1110/my_archy/blob/main/menu/chatgpt.desktop
+if [ $? -ne 0 ]; then
+    result+=$(echo -e "\e[31m✕ One file not fetched. Run the script again.\e[0m\n")
+fi
 curl -o powerpoint.desktop https://github.com/Aanand1110/my_archy/blob/main/menu/powerpoint.desktop
+if [ $? -ne 0 ]; then
+    result+=$(echo -e "\e[31m✕ One file not fetched. Run the script again.\e[0m\n")
+fi
 curl -o calc.desktop https://github.com/Aanand1110/my_archy/blob/main/menu/calc.desktop
+if [ $? -ne 0 ]; then
+    result+=$(echo -e "\e[31m✕ One file not fetched. Run the script again.\e[0m\n")
+fi
 curl -o writer.desktop https://github.com/Aanand1110/my_archy/blob/main/menu/writer.desktop
+if [ $? -ne 0 ]; then
+    result+=$(echo -e "\e[31m✕ One file not fetched. Run the script again.\e[0m\n")
+fi
+
+echo $result
