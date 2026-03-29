@@ -8,6 +8,7 @@
 *The scope of the project might expand in the future.*
 
 ## Prerequisites
+* Good resourse to learn how to install arch linux: https://www.youtube.com/watch?v=FxeriGuJKTM
 * Only run the script if you are using hyperland.
 * Choose NetworkManager while installing Arch(Optional).
 
