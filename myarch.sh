@@ -162,4 +162,12 @@ if [ $? -eq 0 ]; then
 else
     result+=$(echo -e "\e[31m✕ Couldnot install swaybg(run 'sudo pacman -S swaybg).\e[0m/n")
 fi
+
+sudo pacman -S opencode
+if [ $? -eq 0 ]; then
+    result+=$(echo -e "\033[0;32m✓ Successfully installed and opencode.\033[0m\n")
+else
+    result+=$(echo -e "\e[31m✕ Couldnot install opencode(run 'sudo pacman -S swaybg).\e[0m/n")
+fi
+
 echo $result
